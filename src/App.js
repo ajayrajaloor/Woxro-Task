@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
 import BannerPost from './Components/BannerPost';
 import CardPortion from './Components/CardPortion';
 import Contribution from './Components/Contribution';
@@ -23,8 +24,7 @@ export default function App() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <span className="block w-6 h-0.5 bg-white"></span>
-        <span className="block w-0.5 h-6 bg-white"></span>
+        <FaTimes color="white" size={20} />
       </button>
     </div>
   );
